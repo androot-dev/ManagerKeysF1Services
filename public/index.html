@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script>
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+      function cssApply(el, css, time = null, fn = null) {
+        let mls = time / 1000;
+        if (time == null) {
+          for (let i in css) {
+            el.style[i] = css[i];
+          }
+        } else {
+          el.style.transition = "all ." + mls + "s ease-in-out";
+          for (let i in css) {
+            el.style[i] = css[i];
+          }
+          let timeout;
+          new Promise(async function (res, rej) {
+            timeout = await setTimeout(() => {
+              if (fn) {
+                fn();
+                res();
+              } else {
+                res();
+              }
+            }, time);
+          }).then(function (res) {
+            clearTimeout(timeout);
+          });
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+<style>
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+</style>

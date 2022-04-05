@@ -1,0 +1,179 @@
+{
+  "0130004": [
+    "LM_Aeropuerto / Torre (Puerta Principal)",
+    "LM_Aeropuerto(Agregador)"
+  ],
+  "0130006": ["LM_Colon / Torre (Puerta Principal)"],
+  "0130012": ["LM_Pando / Sala Equipos", "LM_Pando / Agregador"],
+  "0130018": ["LM_Pueblo_Libre / Sala Equipos"],
+  "0130020": ["LM_Agatas / Torre (Puerta Principal)"],
+  "0130027": ["LM_San_Luis(Puerta Principal)", "LM_San_Luis(Agregador)"],
+  "0130031": ["LM_Ayacucho / Torre (Puerta Principal)"],
+  "0130033": [
+    "LM_San_Juan_de_Mirafl / Torre (Puerta Principal)",
+    "LM_San_Juan_de_Mirafl / Agregador"
+  ],
+  "0130034": [
+    "LM_Chorrillos / Torre (Puerta Principal)",
+    "LM_Chorrillos / Agregador"
+  ],
+  "0130036": ["LM_Rio_Nazca / Sala Equipos", "LM_Rio_Nazca / Agregador"],
+  "0130038": [
+    "LM_Villa_Salvador / Torre (Puerta Principal)",
+    "LM_Villa_Salvador / Agregador"
+  ],
+  "0130040": ["LM_Wilson / Sala Equipos"],
+  "0130048": ["LM_Sau_San / Torre (Puerta Principal)"],
+  "0130051": [
+    "LM_Priale / Torre (Puerta Principal)",
+    "LM_Priale / Sala Equipos"
+  ],
+  "0130063": ["LM_Risso / Sala Equipos", "LM_Risso / Agregador"],
+  "0130068": ["LM_Caceres / Torre (Puerta Principal)"],
+  "0130072": ["LM_Ransa / Torre (Puerta Principal)", "LM_Ransa / Sala Equipos"],
+  "0130074": [
+    "LM_Haya_de_la_Torre Torre(Puerta Principal)",
+    "LM_Haya_de_la_Torre Torre(Agregdador)"
+  ],
+  "0130087": [
+    "LM_San_Miguelito / Torre (Puerta Principal)",
+    "LM_San_Miguelito / Sala Equipos",
+    "LM_San_Miguelito / Agregador"
+  ],
+  "0130093": [
+    "LM_Monterrico_Sur / Torre (Puerta Principal)",
+    "LM_Monterrico_Sur / Agregador"
+  ],
+  "0130099": ["LM_5_Esquinas / Sala Equipos"],
+  "0130102": ["LM_Sinchi_Roca / Torre (Puerta Principal)"],
+  "0130105": [
+    "LM_Las_Torres / Torre (Puerta Principal)",
+    "LM_Las_Torres / Agregador"
+  ],
+  "0130108": ["LM_Puente_Atocongo / Torre (Puerta Principal)"],
+  "0130119": [
+    "LM_Estadio_Alianza / Torre (Puerta Principal)",
+    "LM_Estadio_Alianza / Agregador"
+  ],
+  "0130126": ["LM_Wiese / Sala Equipos", "LM_Wiese / Agregador"],
+  "0130127": ["LM_Manco_Capac / Torre (Puerta Principal)"],
+  "0130144": [
+    "LM_Pamplona / Torre (Puerta Principal)",
+    "LM_Pamplona / Agregador"
+  ],
+  "0130146": ["LM_Intihuatana / Torre (Puerta Principal)"],
+  "0130149": [
+    "LM_Trapiche / Torre (Puerta Principal)",
+    "LM_Trapiche / Sala Equipos",
+    "LM_Trapiche / Agregador"
+  ],
+  "0130154": ["LM_200_Millas / Torre (Puerta Principal)"],
+  "0130166": [
+    "LM_TECSUP / Torre (Puerta Principal)",
+    "LM_TECSUP / Sala Equipos",
+    "LM_TECSUP / Agregador"
+  ],
+  "0130169": ["LM_Canta_Callao / Torre (Puerta Principal)"],
+  "0130171": [
+    "LM_Gambetta / Torre (Puerta Principal)",
+    "LM_Gambetta / Sala Equipos",
+    "LM_Gambetta / Agregador"
+  ],
+  "0130188": [
+    "LM_Huachipa / Torre (Puerta Principal)",
+    "LM_Huachipa / Sala Equipos",
+    "LM_Huachipa / Agregador"
+  ],
+  "0130201": ["LM_Mega_Plaza / Sala Equipos", "LM_Mega_Plaza / Agregador"],
+  "0130208": ["LM_Horizonte / Torre (Puerta Principal)"],
+  "0130267": ["LM_Billinghurst / Torre (Puerta Principal)"],
+  "0130283": ["LM_Quechuas / Torre (Puerta Principal)"],
+  "0130289": [
+    "LM_Castro_Castro / Torre (Puerta Principal)",
+    "LM_Castro_Castro / Sala Equipos"
+  ],
+  "0130312": [
+    "LM_Huaycan / Torre (Puerta Principal)",
+    "LM_Huaycan / Sala GE",
+    "LM_Huaycan / Agregador"
+  ],
+  "0130313": [
+    "LM_El_Cuadro / Torre (Puerta Principal)",
+    "LM_El_Cuadro / Sala Equipos",
+    "LM_El_Cuadro / Agregador"
+  ],
+  "0130314": [
+    "LM_Cerro_California / Torre (Puerta Principal)",
+    "LM_Cerro_California / Sala GE",
+    "LM_Cerro_California / Agregador"
+  ],
+  "0130315": ["LM_Santa_Eulalia / Torre (Puerta Principal)"],
+  "0130368": [
+    "LM_Asia Torre(Puerta Principal)",
+    "LM_Asia Sala GE",
+    "LM_Asia Agregador"
+  ],
+  "0130373": [
+    "LM_Carabayllo / Torre (Puerta Principal)",
+    "LM_Carabayllo / Sala Equipos",
+    "LM_Carabayllo / Agregador"
+  ],
+  "0130374": [
+    "LM_Zapallal / Torre (Puerta Principal)",
+    "LM_Zapallal / Sala Equipos",
+    "LM_Zapallal / Agregador"
+  ],
+  "0130377": ["LM_Huaral / Torre (Puerta Principal)", "LM_Huaral / Agregador"],
+  "0130380": [
+    "LM_Huacho / Sala Equipos",
+    "LM_Huacho / Sala GE",
+    "LM_Huacho / Agregador"
+  ],
+  "0130382": ["LM_Medio_Mundo / Torre (Puerta Principal)"],
+  "0130383": ["LM_Puerto_Supe / Sala Equipos", "LM_Puerto_Supe / Sala GE"],
+  "0130385": [
+    "LM_Barranca / Torre (Puerta Principal)",
+    "LM_Barranca / Agregador"
+  ],
+  "0130387": [
+    "LM_Lurin / Torre (Puerta Principal)",
+    "LM_Lurin / Sala GE",
+    "LM_Lurin / Agregador"
+  ],
+  "0130390": [
+    "LM_Quipa / Torre (Puerta Principal)",
+    "LM_Quipa / Sala GE",
+    "LM_Quipa / Agregador"
+  ],
+  "0130395": [
+    "LM_Culebras / Torre (Puerta Principal)",
+    "LM_Culebras / Sala Equipos"
+  ],
+  "0130398": [
+    "LM_Canete / Torre (Puerta Principal)",
+    "LM_Canete / Sala GE",
+    "LM_Canete / Agregador"
+  ],
+  "0130504": ["LM_Sedapal / Torre (Puerta Principal)"],
+  "0130540": [
+    "LM_Repetidor_La_Milla / Torre (Puerta Principal)",
+    "LM_Repetidor_La_Milla / Sala GE",
+    "LM_Repetidor_La_Milla / Agregador"
+  ],
+  "0130543": [
+    "LM_Repetidor_La_Molina / Torre (Puerta Principal)",
+    "LM_Repetidor_La_Molina / Sala GE",
+    "LM_Repetidor_La_Molina / Agregador"
+  ],
+  "0130544": [
+    "LM_Repetidor_Morro_Solar / Torre (Puerta Principal)",
+    "LM_Repetidor_Morro_Solar (Sala GE)",
+    "LM_Repetidor_Morro_Solar / Agregador"
+  ],
+  "0130547": ["LM_AGG_San_Felipe / Torre (Puerta Principal)"],
+  "0130573": ["LM_Picapiedra / Torre (Puerta Principal)"],
+  "0131149": ["LM_Nuevo_Caqueta / Agregador"],
+  "0134525": ["LM_Canta_Callao_Ba / Agregador"],
+  "0134549": ["LM_Nuevo_Lurigancho / Agregador"],
+  "0135689": ["LM_Cuore_Mio / Torre (Puerta Principal)"]
+}
