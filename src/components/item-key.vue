@@ -1,25 +1,21 @@
 <template>
   <li>
     <div class="container-id">
-      <ShareCircle class="ShareCircle" @click="sharedForWhatsapp" />
+      <ShareCircle v-if="whatsappShareText" class="ShareCircle" @click="sharedForWhatsapp" />
       <span
         class="electronic-key"
         :id="'key-electronic' + idcomponent"
         v-if="electronicKeys[data.code]"
-        ><img style="width: 15px; height: 20px" :src="electronicIcon" />
-        {{ data.time }}</span
       >
+        <img style="width: 15px; height: 20px" :src="electronicIcon" />
+        {{ data.time }}
+      </span>
       <ToolTip :on="'#key-electronic' + idcomponent" :await="0" theme="light">
         <Information style="margin-right: 5px; margin-bottom: -5px" />
         <ul>
           Este site usa cerradura electronica:
           <br />
-          <li
-            v-for="cerradura in electronicKeys[data.code]"
-            v-bind:key="cerradura"
-          >
-            {{ cerradura }}
-          </li>
+          <li v-for="cerradura in electronicKeys[data.code]" v-bind:key="cerradura">{{ cerradura }}</li>
         </ul>
       </ToolTip>
       <div
@@ -31,17 +27,19 @@
           whiteOrBlack(colorsGroup[data.group])
         "
       >
-        {{ data.group }} <Tag />
+        {{ data.group }}
+        <Tag />
       </div>
       <span class="priority">{{ data.priority }}</span>
       <div class="title">{{ data.longname }}</div>
       <div class="content">
         <div class="details-icons">
-          <span v-if="data['number-keys'] > 0"
-            ><Key /> {{ data["number-keys"] }}</span
-          >
-          <span
-            ><MapMarker />
+          <span v-if="data['number-keys'] > 0">
+            <Key />
+            {{ data["number-keys"] }}
+          </span>
+          <span>
+            <MapMarker />
             <a
               target="_blank"
               :href="
@@ -50,18 +48,13 @@
                 ',' +
                 data.longitude
               "
-              >Ubicación</a
-            ></span
-          >
+            >Ubicación</a>
+          </span>
         </div>
         <ul class="considerations">
-          <li v-if="consideration1 && consideration1 != ''">
-            {{ consideration1 }}
-          </li>
+          <li v-if="consideration1 && consideration1 != ''">{{ consideration1 }}</li>
           <br />
-          <li v-if="consideration2 && consideration2 != ''">
-            {{ consideration2 }}
-          </li>
+          <li v-if="consideration2 && consideration2 != ''">{{ consideration2 }}</li>
           <li
             class="considerations-none"
             v-if="
@@ -133,32 +126,30 @@ export default {
     },
     whatsappShareText() {
       let cadena = `
-      *Site*: ${this.data.longname}\n*Ubicacion*: https://maps.google.com/?q=${
-        this.data.latitude
-      },${this.data.longitude} \n*Prioridad*:_${
-        this.data.priority
-      }_\n*Origen*: _${
-        this.data.group.charAt(0).toUpperCase() +
-        this.data.group.substring(1, this.data.group.length).toLowerCase()
-      }_\n*Dirección*: _${this.data.address}_\n*Coubicado en*: _${
-        this.data["co-located"]
-      }_\n${
-        this.data["number-keys"] == 0
+      *Site*: ${this.data.longname}\n*Ubicacion*: https://maps.google.com/?q=${this.data.latitude
+        },${this.data.longitude} \n*Prioridad*:_${this.data.priority
+        }_\n*Origen*: _${this.data.group?.charAt(0).toUpperCase() +
+        this.data.group?.substring(1, this.data.group.length).toLowerCase()
+        }_\n*Dirección*: _${this.data.address}_\n*Coubicado en*: _${this.data["co-located"]
+        }_\n${this.data["number-keys"] == 0
           ? ""
           : "*LLaves*: _" + this.data["number-keys"] + "_\n"
-      }${
-        this.consideration1
+        }${this.consideration1
           ? "*Consideraciones*:\n   _* " + this.consideration1 + "_\n"
           : ""
-      }${
-        this.consideration2 ? "   _* " + this.consideration2 + "_\n" : ""
-      }*Grupo Electrogeno*: _${
-        this.data["g-electrogeno"].charAt(0).toUpperCase() +
+        }${this.consideration2 ? "   _* " + this.consideration2 + "_\n" : ""
+        }*Grupo Electrogeno*: _${this.data["g-electrogeno"]?.charAt(0).toUpperCase() +
         this.data["g-electrogeno"]
-          .substring(1, this.data["g-electrogeno"].length)
+          ?.substring(1, this.data["g-electrogeno"].length)
           .toLowerCase()
-      }_`;
-      return cadena.replace(/\n/g, "%0A");
+        }_`;
+
+      cadena = cadena.replace(/\n/g, "%0A");
+      //buscar undefined si existe eliminar la linea completa
+      cadena = cadena.replaceAll("undefined", "No definido");
+      cadena = cadena.replaceAll("null", "No definido");
+      cadena = cadena.replaceAll("NaN", "No definido");
+      return cadena;
     },
   },
   methods: {
@@ -168,10 +159,10 @@ export default {
         var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(text);
         var rgb = result
           ? {
-              r: parseInt(result[1], 16),
-              g: parseInt(result[2], 16),
-              b: parseInt(result[3], 16),
-            }
+            r: parseInt(result[1], 16),
+            g: parseInt(result[2], 16),
+            b: parseInt(result[3], 16),
+          }
           : null;
         //Formula que determinara el color blanco o negro de las letras
         return this.contrast(rgb);
