@@ -1,2 +1,3 @@
 # managerkeys-f1services
-https://manager-keys-f1.herokuapp.com/
+
+https://f1-manager-keys.netlify.app
